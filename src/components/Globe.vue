@@ -93,9 +93,9 @@ const loadAnimation = (container, path) => {
     
 onMounted(() => {
   // Load Lottie animations
-  loadAnimation(test1, '/src/assets/json/speed.json');
-  loadAnimation(test2, '/src/assets/json/test2.json');
-  loadAnimation(test3, '/src/assets/json/test3.json');
+  loadAnimation(test1, '/public/json/speed.json');
+  loadAnimation(test2, '/public/json/test2.json');
+  loadAnimation(test3, '/public/json/test3.json');
   
   // Set initial states for smooth animations
   gsap.set(headerRef.value, {
