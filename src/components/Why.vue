@@ -60,7 +60,7 @@
           <div v-for="(feature, fIndex) in plan.features" :key="fIndex" class="flex items-center">
             <img v-if="feature.included && plan.name !== 'Standard'" src="../assets/svg/check6.svg" alt="" class="mr-2 flex-shrink-0">
             <img v-else-if="feature.included && plan.name === 'Standard'" src="../assets/svg/check1.svg" alt="" class="mr-2 flex-shrink-0">
-            <img v-else-if="!feature.included && plan.name === 'Standard'" src="../assets/svg/check7.svg" alt="" class="mr-2 flex-shrink-0">
+            
             <img v-else src="../assets/svg/check2.svg" alt="" class="mr-2 flex-shrink-0">
             <span :class="!feature.included && plan.featured ? 'text-gray-200' : ''">{{ feature.text }}</span>
           </div>
