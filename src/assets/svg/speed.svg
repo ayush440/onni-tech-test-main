@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 500 500" viewBox="0 0 500 500" id="Highspeedsite">
+  <g id="obj" fill="#000000" class="color000000 svgShape">
+    <rect width="203.81" height="203.81" x="56.58" y="231.58" fill="#e3f5ff" class="colore4e3ff svgShape"></rect>
+    <rect width="203.81" height="203.81" x="239.8" y="177.04" fill="#e3f5ff" class="colore4e3ff svgShape"></rect>
+    <rect width="125.69" height="38.31" x="84.03" y="102.47" fill="#e3f5ff" class="colore4e3ff svgShape"></rect>
+    <path fill="#21a5f0" d="M351.32,150.96v252.35c0,3.23-2.62,5.85-5.85,5.85H116.12c-3.23,0-5.85-2.62-5.85-5.85V150.96
+						c0-3.23,2.62-5.85,5.85-5.85h229.35C348.7,145.11,351.32,147.73,351.32,150.96z" class="color7563fb svgShape"></path>
+    <path fill="#1d6893" d="M110.51,168.29h241.07v-18.1c0-3.23-2.62-5.85-5.85-5.85H116.37c-3.23,0-5.85,2.62-5.85,5.85V168.29z" class="color461d93 svgShape"></path>
+    <circle cx="161.94" cy="156.31" r="3.46" fill="#ffffff" class="colorffffff svgShape"></circle>
+    <circle cx="145.38" cy="156.31" r="3.46" fill="#ffffff" class="colorffffff svgShape"></circle>
+    <circle cx="128.82" cy="156.31" r="3.46" fill="#ffffff" class="colorffffff svgShape"></circle>
+    <g opacity=".5" fill="#000000" class="color000000 svgShape">
+      <rect width="42.67" height="42.67" x="127.63" y="309.68" fill="#21a5f0" class="color7563fb svgShape"></rect>
+      <rect width="42.67" height="42.67" x="182.27" y="309.68" fill="#21a5f0" class="color7563fb svgShape"></rect>
+      <rect width="42.67" height="42.67" x="236.91" y="309.68" fill="#21a5f0" class="color7563fb svgShape"></rect>
+      <rect width="42.67" height="42.67" x="291.54" y="309.68" fill="#21a5f0" class="color7563fb svgShape"></rect>
+    </g>
+    <rect width="207.27" height="28.28" x="127.29" y="265.82" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+    <g fill="#000000" class="color000000 svgShape">
+      <rect width="70.63" height="70.63" x="127.22" y="179.96" fill="#1d6893" class="color461d93 svgShape"></rect>
+      <rect width="127.68" height="4.97" x="206.95" y="185.03" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+      <rect width="127.68" height="4.97" x="206.95" y="203.15" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+      <rect width="127.68" height="4.97" x="206.95" y="221.26" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+      <rect width="127.68" height="4.97" x="206.95" y="239.38" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+    </g>
+    <rect width="205.06" height="4.97" x="128.39" y="376.25" fill="#21a5f0" opacity=".5" class="color7563fb svgShape"></rect>
+    <path fill="#ffffff" d="M416.83,334.2H263.18c-3.53,0-6.4-2.86-6.4-6.4v-99.1c0-3.53,2.86-6.4,6.4-6.4h153.65
+				c3.53,0,6.4,2.86,6.4,6.4v99.1C423.22,331.33,420.36,334.2,416.83,334.2z" class="colorffffff svgShape"></path>
+    <g fill="#000000" class="color000000 svgShape">
+      <path fill="#4cabe1" d="M340.01,244.84c5.9,0,11.61,0.86,17,2.49l-7.14,17.47c-3.15-0.8-6.45-1.22-9.85-1.22
+					c-22.38,0-40.53,18.15-40.53,40.53h-18.75C280.73,271.36,307.27,244.84,340.01,244.84z" class="colore14c72 svgShape"></path>
+      <path fill="#21a5f0" d="M399.28,304.1h-18.75c0-15.77-9-29.44-22.15-36.11l7.11-17.4C385.46,260.1,399.28,280.49,399.28,304.1z" class="color7563fb svgShape"></path>
+      <polygon fill="#1d6893" points="361.05 249.27 335.08 301.53 344.71 305.3" class="color461d93 svgShape"></polygon>
+      <circle cx="340.01" cy="303.87" r="7.8" fill="#1d6893" class="color461d93 svgShape"></circle>
+    </g>
+    <path fill="#e3f5ff" d="M300.45,74.09c-16.53-0.05-30.02,13.35-30.08,29.89c-0.05,16.53,13.35,30.02,29.89,30.08
+				c16.53,0.05,30.02-13.35,30.07-29.89C330.39,87.64,316.98,74.14,300.45,74.09z M300.44,77.5c2.09,2.18,6.97,7.88,9.54,15.92
+				c-6.38,1.83-12.81,1.78-19.14-0.15C293.46,85.29,298.35,79.65,300.44,77.5z M310.54,112.02c-6.79-1.96-13.64-1.96-20.39,0.02
+				c-1.49-5.9-1.23-11.32-0.08-16.04c3.47,1.05,6.96,1.62,10.46,1.63c3.4,0.01,6.8-0.5,10.19-1.47
+				C311.81,100.85,312.03,106.2,310.54,112.02z M309.73,114.74c-1.7,4.98-4.69,10.25-9.45,15.73c-4.7-5.47-7.66-10.74-9.33-15.7
+				C297.17,112.94,303.47,112.93,309.73,114.74z M313.28,95.33c3.54-1.27,6.98-3.05,10.25-5.31c2.51,4.13,3.98,8.96,3.97,14.14
+				c-0.02,5.18-1.52,10.01-4.06,14.12c-3.26-2.29-6.7-4.09-10.25-5.38C314.84,106.46,314.54,100.51,313.28,95.33z M321.94,87.67
+				c-3.02,2.09-6.18,3.73-9.43,4.92c-2.25-7.01-6.08-12.39-8.6-15.41C311.25,78.15,317.66,82.05,321.94,87.67z M296.98,77.16
+				c-2.53,2.98-6.36,8.3-8.66,15.24c-3.13-1.2-6.26-2.88-9.32-5.02C283.31,81.87,289.7,78.07,296.98,77.16z M277.37,89.7
+				c3.33,2.32,6.73,4.14,10.15,5.43c-1.33,5.24-1.68,11.26-0.03,17.8c-3.43,1.27-6.85,3.07-10.21,5.37
+				c-2.58-4.17-4.09-9.06-4.07-14.31C273.23,98.74,274.77,93.85,277.37,89.7z M278.89,120.63c3.1-2.13,6.25-3.79,9.39-4.98
+				c1.62,4.88,4.39,10.03,8.71,15.33C289.65,130.08,283.21,126.22,278.89,120.63z M303.55,131.01c4.39-5.32,7.2-10.48,8.84-15.39
+				c3.24,1.2,6.45,2.9,9.44,4.99C317.48,126.25,310.98,130.14,303.55,131.01z" class="colore4e3ff svgShape"></path>
+    <g fill="#000000" class="color000000 svgShape">
+      <path fill="#b5e0f9" d="M188.81,365.85l-120.54-0.38c-1.49,0-2.69-1.22-2.69-2.71l0.19-59.72c0-1.49,1.22-2.69,2.71-2.69
+				l120.54,0.38c1.49,0,2.69,1.22,2.69,2.71l-0.19,59.72C191.52,364.65,190.3,365.86,188.81,365.85z" class="colorbbb5f9 svgShape"></path>
+      <rect width="7.6" height="20.17" x="79.75" y="335.86" fill="#4cabe1" transform="rotate(.18 83.554 345.929)" class="colore14c72 svgShape"></rect>
+      <rect width="7.6" height="27.64" x="95.13" y="328.44" fill="#ffffff" transform="rotate(.18 98.936 342.248)" class="colorffffff svgShape"></rect>
+      <rect width="7.6" height="38.64" x="110.52" y="317.48" fill="#4cabe1" transform="rotate(.18 114.315 336.82)" class="colore14c72 svgShape"></rect>
+      <rect width="7.6" height="27.11" x="125.87" y="329.06" fill="#ffffff" transform="rotate(.18 129.68 342.613)" class="colorffffff svgShape"></rect>
+      <rect width="7.6" height="13.36" x="141.21" y="342.86" fill="#4cabe1" transform="matrix(1 .00315 -.00315 1 1.1 -.454)" class="colore14c72 svgShape"></rect>
+      <rect width="7.6" height="46.63" x="172" y="309.69" fill="#4cabe1" transform="rotate(.18 175.795 333.003)" class="colore14c72 svgShape"></rect>
+      <rect width="7.6" height="36.15" x="156.62" y="320.12" fill="#ffffff" transform="rotate(.18 160.416 338.21)" class="colorffffff svgShape"></rect>
+    </g>
+  </g>
+</svg>
