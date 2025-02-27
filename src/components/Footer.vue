@@ -68,8 +68,8 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/terms/disclaimer" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
-                Disclaimer
+              <router-link to="/terms/Disclaimer" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+                Trading Rules and Discipline
               </router-link>
             </li>
             <li>

@@ -87,8 +87,8 @@
       icon: FileText
     },
     { 
-      name: 'Disclaimer', 
-      path: '/terms/disclaimer',
+      name: 'Trading Rules and Discipline', 
+      path: '/terms/Disclaimer',
       icon: AlertTriangle
     },
     { 

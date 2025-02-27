@@ -1,131 +1,88 @@
 <template>
-    <div class="mt-32 mx-auto max-w-6xl">
-
-        <h2 class="text-white text-[27px] lg:text-[38px] font-semibold text-center">
-            Disclosure
+    <div class="mt-32 mx-auto max-w-6xl text-white">
+        <h2 class="text-[27px] lg:text-[38px] font-semibold text-center">
+            Disclosure Document for Omnitech ALGO
         </h2>
 
+        <div class="p-6">
+            <h1 class="text-2xl font-bold mb-4">Prepared by Omnitech</h1>
+            <p class="mb-4">
+                This Disclosure Document has been prepared by Omnitech (hereinafter referred to as "the Company"), the provider of the Omnitech ALGO platform, to ensure transparency and provide important information regarding our services, products, and the risks involved in the use of our platform.
+            </p>
 
-
-
-        <div class="max-w-6xl mx-auto p-6 text-white ">
-            <h1 class="text-2xl mb-4 text-white font-semibold">Market Risks Warning</h1>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Investment Risks</h2>
+            <h2 class="text-xl font-semibold mb-2">Company Information</h2>
             <ul class="list-disc ml-6 mb-4">
-                <li>Investment in securities market is subject to market risks. Read all related documents carefully
-                    before investing.</li>
-                <li>Market risks may result in partial or permanent loss of investments under certain market conditions.
-                </li>
+                <li><strong>Company Name:</strong> Omnitech</li>
+                <li><strong>Brand Name:</strong> Omnitech ALGO</li>
+                <li><strong>Contact Information:</strong> info@omnitechalgo.com</li>
+                <li><strong>Website:</strong> <a href="https://www.omnitechalgo.com" class="text-[#4984c4] underline">www.omnitechalgo.com</a></li>
             </ul>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Illustrative Purposes</h2>
+            <h2 class="text-xl font-semibold mb-2">Platform Overview</h2>
+            <p class="mb-4">
+                Omnitech ALGO is a technology-driven platform designed to provide users with tools and algorithms for trading and market analysis. The platform offers various features aimed at assisting traders in making informed decisions, including data analytics, algorithmic strategies, and real-time market insights.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">Nature of Services</h2>
+            <p class="mb-4">
+                Omnitech ALGO provides algorithmic trading tools, technical analysis, and data-driven strategies. The platform is intended for use by traders and investors to assist with decision-making. The platform offers educational content, data analysis tools, and algorithmic solutions but does not provide direct financial or investment advice.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">No Guarantee of Profits</h2>
+            <p class="mb-4">
+                Omnitech ALGO provides tools and strategies based on historical data, algorithmic calculations, and market trends; however, there is no guarantee of profit or success from using these tools. Market risks, including the loss of capital, are inherent in all forms of trading. The user acknowledges that past performance does not guarantee future results.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">Risk Disclosure</h2>
             <ul class="list-disc ml-6 mb-4">
-                <li>Securities mentioned are for illustration only and are not recommendations.</li>
+                <li><strong>Algorithmic and Quantitative Trading Risks:</strong> The use of algorithmic and quantitative trading systems involves risks, including but not limited to execution risks, software malfunctions, data delays, and potential system failures.</li>
+                <li><strong>Market Risk:</strong> Market conditions, volatility, liquidity, and unforeseen events can cause unexpected losses. The Company does not take responsibility for any market losses incurred through the use of its services.</li>
+                <li><strong>User Responsibility:</strong> All trading decisions are made at the discretion of the user. The Company is not responsible for any trading losses or financial damages that occur as a result of using the platform.</li>
             </ul>
 
-            <h2 class="text-xl font-semibold text-white mb-2">SEBI Registration</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Registration granted by SEBI and certification from NISM do not guarantee the performance of the
-                    intermediary nor assure returns to investors.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">No Financial or Legal Advice</h2>
+            <p class="mb-4">
+                Omnitech ALGO does not offer personalized investment advice, financial advice, or legal advice. All users should perform their own due diligence before making any financial decisions and may seek advice from qualified professionals if necessary. The content and tools provided on the platform are for informational and educational purposes only.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Performance Disclosures</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Past performance is not indicative of future results.</li>
-                <li>The information on social media is for educational purposes and not investment advice. Investors
-                    should consult their advisors before making decisions.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">User Assumption of Risk</h2>
+            <p class="mb-4">
+                By using Omnitech ALGO, the user acknowledges that they understand the risks associated with algorithmic trading and stock market investments and assume full responsibility for their decisions and trades.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Open Positions Risk</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Our recommendations may remain open, and we may not provide stop-loss or target prices. This could
-                    lead to significant losses in adverse market conditions or company events.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">Data Accuracy and Third-Party Sources</h2>
+            <p class="mb-4">
+                The Company sources data and market information from third-party providers and strives to ensure the accuracy and timeliness of this information. However, the Company cannot guarantee the accuracy or reliability of data from external sources. Users should verify the data and information provided before making any trading or investment decisions.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">SEBI Specified Mechanism</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>All fee payments must be made online to the "MATRIX TRADING TECH" bank account. Payments outside
-                    this mechanism are not considered valid under SEBI regulations.</li>
-                <li>No grievances related to such payments will be entertained by SEBI or its recognized regulatory
-                    bodies.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">Subscription and Fees</h2>
+            <p class="mb-4">
+                Omnitech ALGO operates on a subscription-based model. Users are required to review and agree to the terms of subscription before purchase. Subscription fees and payment terms are disclosed on our website. There are no refunds for subscriptions once purchased. Users are encouraged to utilize the free trial before committing to a subscription.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Warranties Disclaimer</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>The Research Analyst does not guarantee the accuracy, reliability, or suitability of the content.
-                </li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">Intellectual Property</h2>
+            <p class="mb-4">
+                All content, tools, algorithms, and software provided by Omnitech ALGO are the intellectual property of Omnitech. Unauthorized use, duplication, or distribution is strictly prohibited.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Exercise Caution</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>We provide research analysis and recommendations but do not offer portfolio management services,
-                    personal account handling, or risk-profiling-based advisory services.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">Amendments</h2>
+            <p class="mb-4">
+                Omnitech reserves the right to update or modify this Disclosure Document at any time. Any changes will be posted on the website and take effect immediately upon posting.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Reporting Unethical Practices</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Email: <a href="mailto:AMITKSHARMA19644@GMAIL.COM"
-                        class="text-[#4984c4] underline">AMITKSHARMA19644@GMAIL.COM</a></li>
-                <li>SEBI Toll-Free Numbers: 1800 22 7575 or 1800 266 7575</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">Liability Limitation</h2>
+            <p class="mb-4">
+                The Company will not be held responsible for any direct, indirect, or consequential damages arising from the use or misuse of the platform, including trading losses, loss of data, system failures, or unauthorized access. The Company's total liability is limited to the amount paid by the user for the subscription or services.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">Important Notice</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>If dissatisfied with our services, raise your complaint to <a
-                        href="mailto:AMITKSHARMA19644@GMAIL.COM"
-                        class="text-[#4984c4] underline">AMITKSHARMA19644@GMAIL.COM</a> or call +91 90011 03563.</li>
-                <li>If unresolved after 7 days, escalate to SEBI via:
-                    <ul class="list-disc ml-6">
-                        <li><a href="https://scores.sebi.gov.in/" class="text-[#4984c4] underline">SEBI SCORES</a></li>
-                        <li><a href="https://smartodr.in/" class="text-[#4984c4] underline">SEBI ODR</a></li>
-                        <li>SEBI Toll-Free Numbers: 1800 22 7575 or 1800 266 7575</li>
-                    </ul>
-                </li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-2">User Acknowledgement</h2>
+            <p class="mb-4">
+                By using the Omnitech ALGO platform, users acknowledge that they have read, understood, and agreed to the terms outlined in this Disclosure Document. Continued use of the platform constitutes acceptance of the disclosed terms and risks.
+            </p>
 
-            <h2 class="text-xl font-semibold text-white mb-2">SEBI Tools and Resources</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Investor Website: <a href="https://investor.sebi.gov.in/"
-                        class="text-[#4984c4] underline">https://investor.sebi.gov.in/</a></li>
-                <li>Download SEBI SaarThi App:
-                    <ul class="list-disc ml-6">
-                        <li><a href="https://play.google.com/store/apps/details?id=com.sebi.invapp"
-                                class="text-[#4984c4] underline">Android</a></li>
-                        <li><a href="https://apps.apple.com/in/app/saa%E2%82%B9thi/id1589426387"
-                                class="text-[#4984c4] underline">iOS</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Business Activity</h2>
-            <p class="mb-4">MATRIX TRADING TECH is engaged in Research Analyst activities by providing Buy/Sell/Hold
-                calls or ratings to clients. Registered under SEBI (Research Analyst) Regulations, 2014 (SEBI Reg. No:
-                INH000019035).</p>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Disciplinary History</h2>
-            <p class="mb-4">No disciplinary actions, penalties, or regulatory issues have been recorded against MATRIX
-                TRADING TECH or its associates.</p>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Risk Disclosures</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>Clients may lose their entire investment under certain market conditions.</li>
-                <li>Recommendations do not account for individual investment objectives or financial situations.</li>
-            </ul>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Ownership and Conflict of Interest</h2>
-            <ul class="list-disc ml-6 mb-4">
-                <li>MATRIX TRADING TECH or its associates do not have any financial interest or material conflict of
-                    interest in the subject company.</li>
-                <li>No compensation has been received from the subject company in the past 12 months.</li>
-            </ul>
-
-            <h2 class="text-xl font-semibold text-white mb-2">Visit Us</h2>
-            <p class="mb-4">For more details on risks, disclosures, terms, and compliance, visit our website: <a
-                    href="https://www.matrixtradingtech.com"
-                    class="text-[#4984c4] underline">www.matrixtradingtech.com</a></p>
+            <h2 class="text-xl font-semibold mb-2">Contact Information</h2>
+            <p class="mb-4">For any further information or queries, please contact us at <a href="mailto:info@omnitechalgo.com" class="text-[#4984c4] underline">info@omnitechalgo.com</a>.</p>
         </div>
-
     </div>
 </template>
 <script setup>

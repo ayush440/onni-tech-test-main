@@ -4,7 +4,7 @@ import { useRoute, useRouter } from "vue-router";
 // import Cookie from "./Cookie.vue";
 import Refund from "../refundpolicy/RefundPolicy.vue";
 import Terms from "../t&c/TermsandCondition.vue";
-import Disclaimer from "../disclaimer/Disclaimer.vue";
+import Disclaimer from "../Disclaimer/Disclaimer.vue";
 import Privacy from "../privacypolicy/PrivacyPolicy.vue";
 
 // Use Vue Router composables
@@ -73,11 +73,11 @@ watch(() => route.query.tab, (newTab) => {
           </router-link>
 
           <router-link
-            :to="{ query: { tab: 'disclaimer' } }"
+            :to="{ query: { tab: 'Disclaimer' } }"
             class="w-full text-left p-4 rounded-md whitespace-nowrap"
             :class="{
-              'bg-theme-background text-white': activeContent === 'disclaimer',
-              'text-black': activeContent !== 'disclaimer',
+              'bg-theme-background text-white': activeContent === 'Disclaimer',
+              'text-black': activeContent !== 'Disclaimer',
             }"
           >
             Disclaimer
@@ -101,7 +101,7 @@ watch(() => route.query.tab, (newTab) => {
         <Privacy v-if="activeContent === 'privacy'" id="privacyid" />
         <Terms v-if="activeContent === 'terms'" id="termsid" />
         <!-- <Cookie v-if="activeContent === 'cookies'" id="cookiesid" /> -->
-        <Disclaimer v-if="activeContent === 'disclaimer'" id="descid" />
+        <Disclaimer v-if="activeContent === 'Disclaimer'" id="descid" />
         <Refund v-if="activeContent === 'refund'" id="refundid" />
       </div>
     </div>
