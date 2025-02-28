@@ -7,7 +7,7 @@
           <p ref="promoDescription" class="text-gray-300 mt-3 text-base md:text-lg">Boost your trading with AI-powered strategies.</p>
         </div>
         <div ref="promoAction" class="text-right w-full md:w-auto">
-          <p ref="promoOffer" class="text-gray-400 mb-3">Limited-time offer!</p>
+          <p ref="promoOffer" class="text-gray-400 mb-3 text-center md:text-left">Limited-time offer!</p>
           <button class="w-full md:w-auto bg-[#4D96DA] hover:bg-blue-600 text-white text-lg font-medium py-3 px-8 rounded-lg transition">
             Join Now
           </button>

@@ -16,7 +16,7 @@
                     class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <PlayIcon class="w-12 h-12 text-white" />
                 </div>
-                <div class="text-[#E8E0E0] text-[14px] font-[400] mt-2 p-2">
+                <div class="text-[#E8E0E0] text-[14px] font-[400] mb-14 p-2">
                     {{ video.title }}
                    
                 </div>

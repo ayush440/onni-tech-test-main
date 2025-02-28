@@ -4,13 +4,13 @@
       <div class="grid grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
         <!-- Logo and Description Column -->
         <div ref="logoColumn" class="col-span-3 lg:col-span-1 text-center lg:text-left">
-          <div class="flex items-center justify-center lg:justify-start">
-            <img src="../assets/svg/Light.svg" alt="OMNITECH ALGO" class="w-40">
+          <div class="flex items-center md:justify-center lg:justify-start">
+            <img src="../assets/svg/Light.svg" alt="OMNITECH ALGO" class="w-40 ">
           </div>
-          <p class="text-[#E8E0E0] mt-10 md:mt-8 text-md max-w-sm md:max-w-44 mx-auto md:mx-0">
+          <p class="text-[#E8E0E0] mt-10 md:mt-8 text-md max-w-sm md:max-w-44 mx-auto md:mx-0 text-left">
             Innovative trading solutions designed for efficiency, accuracy, and success
           </p>
-          <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+          <div class="flex md:justify-center lg:justify-start space-x-4 mt-4 ">
             <a href="#" class="text-white hover:opacity-80">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-[#4984c4]"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
@@ -27,11 +27,11 @@
         </div>
 
         <!-- Quick Links Section -->
-        <div ref="quickLinksDesktop" class="text-center lg:text-left hidden lg:block">
+        <div ref="quickLinksDesktop" class="text-left  hidden lg:block">
           <h3 class="font-semibold text-white mb-6 text-xl">Quick links</h3>
           <ul class="space-y-4">
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md ">
                 Why Algo
               </a>
             </li>
@@ -46,7 +46,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md ">
                 How its works
               </a>
             </li>
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Legal Section -->
-        <div ref="legalSection" class="text-center lg:text-left">
+        <div ref="legalSection" class="text-left">
           <h3 class="font-semibold text-white mb-6 text-xl lg:block hidden">Legal</h3>
           <ul class="space-y-4 hidden lg:block">
             <li>
@@ -122,8 +122,8 @@
 
         <!-- Quick Links Mobile (preserved) -->
         <div ref="quickLinksMobile" class="text-center lg:text-left lg:hidden">
-          <h3 class="font-semibold text-white mb-4">Quick Links</h3>
-          <ul class="space-y-3">
+          <h3 class="font-semibold text-white mb-4 text-left ">Quick Links</h3>
+          <ul class="space-y-3 text-left ">
             <li>
               <a href="#how" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 How it works
@@ -166,22 +166,22 @@
           </a>
 
           <!-- Mobile view content preserved -->
-          <h3 class="font-semibold text-white mb-4 lg:hidden">Address</h3>
+          <h3 class="font-semibold text-white mb-4 lg:hidden text-left">Address</h3>
           <ul class="space-y-4 lg:hidden">
             <li class="flex items-center md:justify-center xl:justify-start">
-              <img src="../assets/svg/location.svg" alt="" class="w-5 h-5 mr-3 mt-1">
+             
               <a class="text-[#E8E0E0] text-md">556 ,MH.B COLONY ,SATPUR COLONY, NASHIK</a>
             </li>
           </ul>
-          <h3 class="font-semibold text-white my-4 lg:hidden">Contact Us</h3>
+          <h3 class="font-semibold text-white my-4 lg:hidden text-left">Contact Us</h3>
           <ul class="space-y-4 lg:hidden">
             <li class="flex items-center md:justify-center xl:justify-start">
-              <img src="../assets/svg/call.svg" alt="" class="w-5 h-5 mr-3">
+            
               <a href="tel:+919028033569" class="text-[#E8E0E0] text-md">+91-9028033569</a> &nbsp;&nbsp;
               <a href="tel:+919284280668" class="text-[#E8E0E0] text-md">+91-9284280668</a>
             </li>
             <li class="flex items-center md:justify-center xl:justify-start">
-              <img src="../assets/svg/mail.svg" alt="" class="w-4 h-4 mr-3">
+           
               <a href="mailto:info@omnitechalgo.com" class="text-white text-md">
                 info@omnitechalgo.com
               </a>
