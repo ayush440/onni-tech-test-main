@@ -17,7 +17,7 @@ const routes = [
     children: [
       { path: 'disclosure', component: ()=> import('/src/components/termsandcondition/disclosure/Disclosure.vue') },
       { path: 't&c', component: ()=> import('/src/components/termsandcondition/t&c/TermsandCondition.vue') },
-      { path: 'Disclaimer', component: ()=> import('/src/components/termsandcondition/Disclaimer/Disclaimer.vue') },
+      { path: 'Disclaimer', component: ()=> import('/src/components/termsandcondition/disclaimer/Disclaimer.vue') },
       { path: 'refund-policy', component: ()=> import('/src/components/termsandcondition/refundpolicy/RefundPolicy.vue') },
       { path: 'privacy-policy', component: ()=> import('/src/components/termsandcondition/privacypolicy/PrivacyPolicy.vue') },
     ]
