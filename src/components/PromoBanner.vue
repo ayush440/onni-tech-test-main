@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center py-14 bg-black">
+  <div class="flex justify-center items-center  bg-[#14171a] pb-10">
     <div class="w-full max-w-6xl mx-auto px-4">
       <div ref="promoBanner" class="rounded-3xl border-2 border-blue-500 bg-[#0E1A30] flex flex-col md:flex-row items-start md:items-center justify-between p-10 md:p-12">
         <div ref="promoText" class="text-white mb-6 md:mb-0">

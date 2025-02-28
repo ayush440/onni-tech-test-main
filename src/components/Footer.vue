@@ -5,9 +5,9 @@
         <!-- Logo and Description Column -->
         <div ref="logoColumn" class="col-span-3 lg:col-span-1 text-center lg:text-left">
           <div class="flex items-center justify-center lg:justify-start">
-            <img src="../assets/img/omnitech-lg.png" alt="OMNITECH ALGO" class="w-40">
+            <img src="../assets/svg/Light.svg" alt="OMNITECH ALGO" class="w-40">
           </div>
-          <p class="text-[#E8E0E0] mt-10 md:mt-2 text-md max-w-sm md:max-w-44 mx-auto md:mx-0">
+          <p class="text-[#E8E0E0] mt-10 md:mt-8 text-md max-w-sm md:max-w-44 mx-auto md:mx-0">
             Innovative trading solutions designed for efficiency, accuracy, and success
           </p>
           <div class="flex justify-center lg:justify-start space-x-4 mt-4">
@@ -194,7 +194,11 @@
       <div ref="footerBottom" class="border-t border-gray-800 py-6 flex flex-col lg:flex-row justify-between items-center">
         <div class="flex items-center mb-4 lg:mb-0">
           <span class="text-[#E8E0E0] text-sm mr-2">Backed By</span>
-          <img src="../assets/img/xtention-lg.png" alt="Xtention" class=" w-28" />
+          <a href="https://www.xtentioncrew.tech/" target="_blank">
+    <img src="../assets/img/xtention-lg.png" alt="Xtention" class="w-28" />
+</a>
+
+
         </div>
         <div class="text-[#E8E0E0] text-sm">
           All Rights Reserved

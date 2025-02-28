@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-[80vh] overflow-hidden">
+  <div class="relative h-[70vh] md:h-[80vh] verflow-hidden">
     <!-- Video Background with Overlay -->
     <div class="absolute inset-0 z-0">
       <video autoplay muted loop class="absolute w-full h-full object-cover">
@@ -9,11 +9,11 @@
       <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
     </div>
     <!-- Content Container -->
-    <div class="relative z-10 flex items-center justify-between mx-auto px-6 h-full ml-10">
+    <div class="relative z-10 flex items-center justify-between mx-auto px-6 h-full md:ml-10 text-center md:text-left ">
       <!-- Hero Text Section -->
-      <div ref="heroTextRef" class="text-white max-w-3xl lg:pr-12 md:mb-0 mb-12 pt-10 h-[80%]">
+      <div ref="heroTextRef" class="text-white max-w-3xl lg:pr-12 md:mb-0  md:h-[80%]">
         <p ref="taglineRef" class="text-[16px] font-[500] mb-2">Trade without the stress let the algo decide!</p>
-        <h1 ref="headingRef" class="text-4xl md:text-[64px] leading-[69px] font-bold mb-6">
+        <h1 ref="headingRef" class="text-4xl md:text-[64px]  leading-[49px] md:leading-[69px] font-bold mb-6">
           Why trade manually when the algo can do it flawlessly?
         </h1>
         <p ref="descriptionRef" class="text-base md:text-lg opacity-90 leading-[32px]">

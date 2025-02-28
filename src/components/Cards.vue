@@ -1,5 +1,5 @@
 <template>
-  <section class=" py-20 mt-24 relative overflow-hidden">
+  <section class=" md:py-20 mt-10 md:mt-24 relative overflow-hidden mx-auto px-8">
     <!-- Gradient Circle -->
     <img src="../assets/img/Gradient.png" alt="Gradient Background" class="absolute hidden xl:block opacity-20" />
 

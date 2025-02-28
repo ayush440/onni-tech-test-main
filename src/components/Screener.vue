@@ -4,6 +4,7 @@
   <!-- <Tutorial />
   <MobileForm/> -->
   <NewHero />
+  <Why id="pricing" />
   <StatsCard />
   
   <div class="mt-32 justify-center items-center w-full md:mt-10 mb-10 flex xl:hidden">
@@ -11,13 +12,16 @@
   </div>
   <Globe id="why"/>
   <PromoBanner />
-  <Why id="pricing" />
+
   <Cards id="features"/>
  
   <Comparison id="how"/>
   <Video />
   <Features id="features" />
   <Footer />
+  
+  <!-- Add the floating WhatsApp component -->
+  <FloatingWhatsApp />
 </template>
 
 <script setup>
@@ -37,5 +41,5 @@ import Video from './Video.vue'
 // import Feedback from "./StatsCard.vue";
 import StatsCard from "./StatsCard.vue";
 import StatsCardMobile from "./StatsCardMobile.vue";// Import StatsCard Component
-
+import FloatingWhatsApp from './FloatingWhatsApp.vue'; // Import the new WhatsApp component
 </script>

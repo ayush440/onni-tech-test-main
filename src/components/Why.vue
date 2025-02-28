@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#14171A] py-24 px-4 md:px-6 lg:px-16 font-satoshi min-h-screen">
+  <div class="bg-[#14171A] py-14 md:py-24 px-4 md:px-6 lg:px-16 font-satoshi min-h-screen">
     <div ref="headingSection" class="text-center mb-12 max-w-3xl mx-auto">
       <h2 ref="mainHeading" class="text-2xl text-white md:text-4xl font-extrabold mb-4 max-w-md mx-auto">Pick a plan that suits you!</h2>
       <p ref="headingDescription" class="text-[#E8E0E0] max-w-2xl mx-auto">Get the right tools, automation, and strategies to maximize your
@@ -18,20 +18,26 @@
 
     </div>
 
-    <div ref="desktopSaveSection" class="mx-auto flex max-w-xl mb-10 flex-col items-end">
+    <div ref="desktopSaveSection" class="mx-auto hidden max-w-xl mb-10 flex-col items-end justify-center md:flex">
         <div ref="desktopLottieContainer" class="w-24 h-16 pr-6 rotate-45"></div>
         <span class="text-[#21A5F0] ">Save 25%</span>
     </div>
 
 
-    <div ref="mobileSaveSection" class="flex flex-col items-center justify-center text-center transform translate-x-16 mb-8 md:hidden">
+    <div ref="mobileSaveSection" class="flex flex-col items-center justify-center text-center transform translate-x-16 mb-8 md:hidden ">
       <div ref="mobileLottieContainer" class="w-16 h-16 rotate-45"></div>
       <span class="text-[#21A5F0] text-md">Save 25%</span>
     </div>
 
     <div ref="plansContainer" class="flex flex-col text-white lg:flex-row justify-center gap-6 max-w-7xl mx-auto">
-      <div v-for="(plan, index) in plans" :key="index" ref="planCards" :class="['card-glow flex-1 p-6 rounded-xl max-w-md mx-auto w-full',
-        plan.featured ? 'bg-[#4984c4] text-white' : ' border border-white border-opacity-10']">
+      <div v-for="(plan, index) in plans" :key="index" ref="planCards" 
+        :class="['plan-card flex-1 p-6 rounded-xl max-w-md mx-auto w-full transition-all duration-500',
+          (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index 
+            ? 'bg-[#4984c4] text-white shadow-glow' 
+            : 'border border-white border-opacity-10']"
+        @mouseenter="hoveredPlan = index"
+        @mouseleave="hoveredPlan = null"
+        @click="selectedPlan = index">
         <div class="flex justify-between items-start mb-4">
           <div>
             <h3 class="text-xl font-semibold mb-2">{{ plan.name }}</h3>
@@ -40,9 +46,15 @@
             </p>
           </div>
           <span v-if="plan.discount"
-            class="bg-[#21A5F01A] bg-opacity-30 text-[#21A5F0] text-center py-1 w-full md:w-28 rounded-full text-xs">
-            {{ plan.discount }}
-          </span>
+  :class="[
+    'text-center py-1 w-full md:w-28 rounded-full text-xs transition-all duration-300',
+    (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index
+      ? 'bg-white text-[#4984c4]'
+      : 'bg-[#21A5F01A] text-[#4984c4]'
+  ]">
+  {{ plan.discount }}
+</span>
+
         </div>
         <div class="text-5xl font-bold my-8 flex items-baseline">
           ₹{{ activeTab === 'Monthly' ? plan.monthPrice : activeTab === 'Quarterly' ? plan.quaterlyPrice : activeTab ===
@@ -50,19 +62,22 @@
           <span class="text-sm ml-1 font-normal text-[#E8E0E0]">/
             Month</span>
         </div>
-        <button :class="['w-full py-3 rounded-lg font-medium border transition-colors',
-          plan.featured
+        <button :class="['w-full py-3 rounded-lg font-medium border transition-colors duration-300',
+          (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index
             ? 'bg-white text-[#21A5F0] border-white hover:bg-gray-100'
             : 'border-[#21A5F0] text-[#21A5F0] hover:bg-[#21A5F022] hover:text-white']">
           Get Started Now
         </button>
         <div class="mt-6 space-y-3">
           <div v-for="(feature, fIndex) in plan.features" :key="fIndex" class="flex items-center">
-            <img v-if="feature.included && plan.name !== 'Standard'" src="../assets/svg/check6.svg" alt="" class="mr-2 flex-shrink-0">
-            <img v-else-if="feature.included && plan.name === 'Standard'" src="../assets/svg/check1.svg" alt="" class="mr-2 flex-shrink-0">
-            
+            <img v-if="feature.included && ((selectedPlan === index && hoveredPlan === null) || hoveredPlan === index)" 
+              src="../assets/svg/check1.svg" alt="" class="mr-2 flex-shrink-0">
+            <img v-else-if="feature.included" 
+              src="../assets/svg/check6.svg" alt="" class="mr-2 flex-shrink-0">
             <img v-else src="../assets/svg/check2.svg" alt="" class="mr-2 flex-shrink-0">
-            <span :class="!feature.included && plan.featured ? 'text-gray-200' : ''">{{ feature.text }}</span>
+            <span :class="!feature.included && ((selectedPlan === index && hoveredPlan === null) || hoveredPlan === index) ? 'text-gray-200' : ''">
+              {{ feature.text }}
+            </span>
           </div>
         </div>
       </div>
@@ -81,8 +96,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const activeTab = ref('Monthly');
+const hoveredPlan = ref(null);
+const selectedPlan = ref(1); // Default to Standard Plan (index 1)
 
-const tabs = ['Monthly', 'Quarterly', 'Half Yearly', 'Yearly'];
+const tabs = ['Monthly', 'Quarterly', 'Half Yearly'];
 
 const plans = ref([
   {
@@ -275,38 +292,25 @@ onMounted(() => {
   font-family: 'Satoshi', sans-serif;
 }
 
-.card-glow {
+.plan-card {
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  outline: none;
+  border: 1px solid transparent;
 }
 
-.card-glow:hover {
-  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.1);
+.plan-card:hover {
+  box-shadow: 0 0 15px 2px rgba(73, 132, 196, 0.3);
 }
 
-
-
-/* Top left and bottom right corners */
-.card-glow::before {
-  top: -2px;
-  left: -2px;
-  border-top: 2px solid rgba(255, 255, 255, 0.4);
-  border-left: 2px solid rgba(255, 255, 255, 0.4);
-  border-top-left-radius: 8px;
+.shadow-glow {
+  box-shadow: 0 0 15px 2px rgba(73, 132, 196, 0.3);
+  border-color: transparent !important;
 }
 
-/* Bottom right and top right corners */
-.card-glow::after {
-  bottom: -2px;
-  right: -2px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-  border-right: 2px solid rgba(255, 255, 255, 0.4);
-  border-bottom-right-radius: 8px;
-}
-
-.card-glow:hover::before,
-.card-glow:hover::after {
-  opacity: 1;
-  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.2);
+/* Remove the pseudo-elements that were causing the white border issue */
+.plan-card::before,
+.plan-card::after {
+  display: none;
 }
 </style>

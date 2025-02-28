@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32 text-white max-w-6xl mx-auto">
+  <div class="mt-32 text-white max-w-6xl mx-auto font-satoshi">
       <h2 class="text-[27px] lg:text-[38px] font-semibold text-center">
         Trading Rules and Discipline for Omnitech ALGO
       </h2>

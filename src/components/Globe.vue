@@ -1,5 +1,5 @@
 <template>
-  <section class="py-8 pt-48 -mt-28 bg-[#14171A]">
+  <section class=" py-8 md:py-32 pt-28 md:pt-48 -mt-28 bg-[#14171A]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-16 max-w-7xl">
       <!-- Header Section -->
       <div ref="headerRef" class="text-center mb-8 sm:mb-10 md:mb-12 pt-10">
@@ -14,9 +14,9 @@
       <!-- Cards Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white sm:gap-6 md:gap-8 max-w-7xl mx-auto">
         <!-- Lightning-fast execution -->
-        <div ref="card1" class="card-glow border border-white border-opacity-10 rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
+        <div ref="card1" class="card-glow border-4 border-white border-opacity-10 hover:border-4 hover:border-[#4984c4] rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
           <div class="rounded-lg p-2 sm:p-4 mb-4 sm:mb-6 overflow-hidden">
-            <div ref="test1" class="scale-150 "></div>
+            <div ref="test1" class=""></div>
           </div>
           <h3 class="text-[16px] font-semibold mb-2 sm:mb-3 text-left">
             Speed
@@ -27,7 +27,7 @@
         </div>
 
         <!-- No coding required -->
-        <div ref="card2" class="card-glow border border-white border-opacity-10 rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
+        <div ref="card2" class="card-glow border-4 border-white border-opacity-10 hover:border-4 hover:border-[#4984c4] rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
           <div class="rounded-lg p-2 sm:p-4 mb-4 sm:mb-6 overflow-hidden">
             <div ref="test2" ></div>
           </div>
@@ -40,9 +40,9 @@
         </div>
 
         <!-- 24/7 market tracking -->
-        <div ref="card3" class="card-glow border border-white border-opacity-10 rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
+        <div ref="card3" class="card-glow border-4 border-white border-opacity-10 hover:border-4 hover:border-[#4984c4] rounded-lg p-4 sm:p-6 md:p-8 shadow-sm transform transition-transform duration-300 md:hover:scale-105">
           <div class="rounded-lg p-2 sm:p-4 mb-4 sm:mb-6 overflow-hidden">
-            <div ref="test3" class="scale-150"></div>
+            <div ref="test3" ></div>
           </div>
           <h3 class="text-[16px] font-semibold mb-2 sm:mb-3 text-left">
             Automation 

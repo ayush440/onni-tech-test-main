@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#14171a] backdrop-blur-sm rounded-3xl mt-10 p-6 max-w-5xl w-full mx-5  border border-[#ffffff] border-opacity-10">
+    <div class="bg-[#14171a] backdrop-blur-sm rounded-3xl  p-6 max-w-5xl w-full mx-5 -mt-10 border border-[#ffffff] border-opacity-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <!-- Left Content -->
         <div class="lg:col-span-5">
