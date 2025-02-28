@@ -27,8 +27,7 @@
       <!-- Step 1 -->
       <div ref="step1" class="flex flex-col items-center md:w-[45%] lg:w-auto">
         <div class="w-14 h-14 bg-opacity-40 bg-[#21A5F0] rounded-lg flex items-center justify-center">
-          <!-- <img src="/src/assets/svg/sign-up.svg" alt=""> -->
-          <div ref="signupAnimation" class="w-16 h-16"></div>
+          <img src="../assets/img/start/signup.svg" alt="Sign up" class="w-8 h-8">
         </div>
         <p class="text-[#E8E0E0] font-medium mt-4 max-w-[160px]">Sign up in minutes and get started.</p>
       </div>
@@ -41,8 +40,7 @@
       <!-- Step 2 -->
       <div ref="step2" class="flex flex-col items-center md:w-[45%] lg:w-auto">
         <div class="w-14 h-14 bg-opacity-40 bg-[#21A5F0] rounded-lg flex items-center justify-center">
-          <!-- <img src="/src/assets/svg/connect.svg" alt=""> -->
-          <div ref="connectAnimation" class="w-16 p-1 h-16"></div>
+          <img src="../assets/img/start/Link.svg" alt="Connect" class="w-8 h-8">
         </div>
         <p class="text-[#E8E0E0] font-medium mt-4 max-w-[160px]">Connect your broker for seamless integration. </p>
       </div>
@@ -55,8 +53,7 @@
       <!-- Step 3 -->
       <div ref="step3" class="flex flex-col items-center md:w-[45%] lg:w-auto">
         <div class="w-14 h-14 bg-opacity-40 bg-[#21A5F0] rounded-lg flex items-center justify-center">
-          <!-- <img src="/src/assets/svg/graph.svg" alt=""> -->
-          <div ref="strategyAnimation" class="w-16 p-2 h-16"></div>
+          <img src="../assets/img/start/Chart.svg" alt="Strategy" class="w-8 h-8">
         </div>
         <p class="text-[#E8E0E0] font-medium mt-4 max-w-[160px]">Choose a strategy that fits your trading style.</p>
       </div>
@@ -69,8 +66,7 @@
       <!-- Step 4 -->
       <div ref="step4" class="flex flex-col items-center md:w-[45%] lg:w-auto">
         <div class="w-14 h-14 bg-opacity-40 bg-[#21A5F0] rounded-lg flex items-center justify-center">
-          <!-- <img src="/src/assets/svg/ai.svg" alt=""> -->
-          <div ref="aiAnimation" class="w-16 h-16 p-2"></div>
+          <img src="../assets/img/start/ai.svg" alt="AI" class="w-8 h-8">
         </div>
         <p class="text-[#E8E0E0] font-medium mt-4 max-w-[160px]">Deploy trades automatically and let AI work for you.
         </p>
@@ -110,19 +106,12 @@
 </template>
 
 <script setup>
-import Lottie from 'lottie-web';
 import { onMounted, ref } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
-
-// Animation refs
-const signupAnimation = ref(null);
-const connectAnimation = ref(null);
-const strategyAnimation = ref(null);
-const aiAnimation = ref(null);
 
 // Content refs for GSAP animations
 const headingSection = ref(null);
@@ -138,29 +127,7 @@ const statCard1 = ref(null);
 const statCard2 = ref(null);
 const statCard3 = ref(null);
 
-const loadAnimation = (container, path) => {
-  try {
-    Lottie.loadAnimation({
-      container: container.value,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: path,
-      onError: (error) => {
-        console.error(`Error loading animation from ${path}:`, error);
-      },
-    });
-  } catch (error) {
-    console.error('Error initializing animation:', error);
-  }
-};
-
 onMounted(() => {
-  loadAnimation(signupAnimation, '/src/assets/json/tap.json');
-  loadAnimation(connectAnimation, '/src/assets/json/link.json');
-  loadAnimation(strategyAnimation, '/src/assets/json/graph.json');
-  loadAnimation(aiAnimation, '/src/assets/json/ai.json');
-  
   // Initialize GSAP animations
   
   // Set initial states
@@ -236,12 +203,16 @@ onMounted(() => {
       once: true
     }
   });
+  
+  // Start counter animations
+  animateValue(10, 2000, count1, true); // Ensures count1 is always a whole number
+  animateValue(1000, 2000, count2);
+  animateValue(90.99, 2000, count3);
 })
 
 const count1 = ref(0)
 const count2 = ref(0)
 const count3 = ref(0)
-
 
 const formatNumber = (num) => {
   return new Intl.NumberFormat().format(num)
@@ -262,13 +233,4 @@ const animateValue = (target, duration, element, isInteger = false) => {
     }
   }, 10);
 };
-
-
-onMounted(() => {
-  animateValue(10, 2000, count1, true); // Ensures count1 is always a whole number
-  animateValue(1000, 2000, count2);
-  animateValue(90.99, 2000, count3);
-});
-
-
 </script>

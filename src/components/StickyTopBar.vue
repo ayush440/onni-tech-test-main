@@ -1,31 +1,45 @@
 <template>
     <div ref="header" :class="['sticky top-0 z-50 flex justify-between items-center transition-all py-1', isSticky ? 'bg-[#06090F]' : 'bg-[#06090F]']">
-        <!-- Contact Icons Section -->
-        <div class="flex items-center gap-3 text-white md:px-20 px-3">
-            <!-- Phone Icon with Click Action -->
-            <div class="relative">
-                <button @click="togglePhoneInfo" class="focus:outline-none">
-                    <img src="/src/assets/svg/call-2.svg" alt="Phone" class="w-5 h-5">
-                </button>
+        <!-- Contact Info Section -->
+        <div class="flex items-center text-white md:px-20 px-3">
+            <!-- Mobile: Only Icons with Dropdowns -->
+            <div class="md:hidden flex items-center gap-3">
+                <!-- Phone Icon with Click Action -->
+                <div class="relative">
+                    <button @click="togglePhoneInfo" class="focus:outline-none">
+                        <img src="/src/assets/svg/call-2.svg" alt="Phone" class="w-5 h-5">
+                    </button>
+                    
+                    <div v-if="showPhoneInfo" class="absolute top-full left-0 mt-1 bg-[#06090F] p-3 rounded shadow-lg z-50">
+                        <p class="text-md font-[400] whitespace-nowrap">
+                            +91-9028033569
+                        </p>
+                    </div>
+                </div>
                 
-                <div v-if="showPhoneInfo" class="absolute top-full left-0 mt-1 bg-[#06090F] p-3 rounded shadow-lg z-50">
-                    <p class="text-md font-[400] whitespace-nowrap">
-                        +91-9028033569
-                    </p>
+                <!-- Email Icon with Click Action -->
+                <div class="relative">
+                    <button @click="toggleEmailInfo" class="focus:outline-none">
+                        <img src="/src/assets/svg/mail-2.svg" alt="Email" class="w-5 h-5">
+                    </button>
+                    
+                    <div v-if="showEmailInfo" class="absolute top-full left-0 mt-1 bg-[#06090F] p-3 rounded shadow-lg z-50">
+                        <a class="text-md font-[400] whitespace-nowrap" href="mailto:info@omnitechalgo.com">
+                            info@omnitechalgo.com
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <!-- Email Icon with Click Action -->
-            <div class="relative">
-                <button @click="toggleEmailInfo" class="focus:outline-none">
-                    <img src="/src/assets/svg/mail-2.svg" alt="Email" class="w-5 h-5">
-                </button>
-                
-                <div v-if="showEmailInfo" class="absolute top-full left-0 mt-1 bg-[#06090F] p-3 rounded shadow-lg z-50">
-                    <a class="text-md font-[400] whitespace-nowrap" href="mailto:info@omnitechalgo.com">
-                        info@omnitechalgo.com
-                    </a>
-                </div>
+            <!-- Desktop: Show Full Contact Info -->
+            <div class="hidden md:flex items-center gap-1">
+                <img src="/src/assets/svg/call-2.svg" alt="" class="w-4">&nbsp;
+                <p class="text-md font-[400]">
+                    +91-9028033569
+                </p>
+                <span class="mx-1">|</span>
+                <img src="/src/assets/svg/mail-2.svg" alt="" class="w-4">
+                <a class="text-md font-[400]" href="mailto:info@omnitechalgo.com">info@omnitechalgo.com</a>
             </div>
         </div>
 

@@ -16,7 +16,7 @@
   <Cards id="features"/>
  
   <Comparison id="how"/>
-  <Video />
+  <Video id="videos"/>
   <Features id="features" />
   <Footer />
   

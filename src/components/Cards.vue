@@ -35,7 +35,7 @@
         <!-- Right Column - Features Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
           <!-- Smart Strategy Builder -->
-          <div ref="featureCard1" class="card-glow bg-[#14171A] border border-white border-opacity-10 rounded-xl p-6 shadow-sm flex flex-col">
+          <div ref="featureCard1" class="card-glow bg-[#4984C4] border border-white border-opacity-10 rounded-xl p-6 shadow-sm flex flex-col">
             <div class="mb-4 flex items-center justify-start h-16">
               <div ref="marketAnalysisAnimation" class="w-16 h-16"></div>
             </div>
@@ -50,9 +50,9 @@
 
           <!-- Instant Alerts -->
           <div ref="featureCard2"
-            class="card-glow bg-[#14171A] border border-white border-opacity-10 rounded-xl p-6 row-span-2 pt-16 shadow-sm flex flex-col">
+            class="card-glow bg-[#4984C4] border border-white border-opacity-10 rounded-xl p-6 row-span-2 pt-16 shadow-sm flex flex-col">
             <div class="mb-4 flex items-center justify-start h-16">
-              <div ref="riskManagementAnimation" class="w-24 h-24"></div>
+              <div ref="riskManagementAnimation" class="w-16 "></div>
             </div>
             <h3 class="text-lg font-bold text-white mb-2 flex items-center">
               Risk Management Controls
@@ -65,7 +65,7 @@
 
           <!-- AI-Powered Market Insights -->
           <div ref="featureCard3"
-            class="card-glow bg-[#14171A] border border-white border-opacity-10 rounded-xl p-6 row-span-2 pt-16 shadow-sm flex flex-col">
+            class="card-glow bg-[#4984C4] border border-white border-opacity-10 rounded-xl p-6 row-span-2 pt-16 shadow-sm flex flex-col">
             <div class="mb-4 flex items-center justify-start h-16">
               <div ref="multiAssetsAnimation" class="w-16 h-16"></div>
             </div>
@@ -79,7 +79,7 @@
           </div>
 
           <!-- Auto-Execution -->
-          <div ref="featureCard4" class="card-glow bg-[#14171A] border border-white border-opacity-10 rounded-xl p-6 shadow-sm flex flex-col">
+          <div ref="featureCard4" class="card-glow bg-[#4984C4] border border-white border-opacity-10 rounded-xl p-6 shadow-sm flex flex-col">
             <div class="mb-4 flex items-center justify-start h-16">
               <div ref="backtestingAnimation" class="w-16 h-16"></div>
             </div>
@@ -146,10 +146,10 @@ export default {
 
     onMounted(() => {
       // Load Lottie animations
-      loadAnimation(marketAnalysisAnimation, '/src/assets/json/3D Chart.json');
-      loadAnimation(riskManagementAnimation, '/src/assets/json/risk.json');
-      loadAnimation(multiAssetsAnimation, '/src/assets/json/Round Diagram.json');
-      loadAnimation(backtestingAnimation, '/src/assets/json/setting.json');
+      loadAnimation(marketAnalysisAnimation, '/src/assets/json/test-4.json');
+      loadAnimation(riskManagementAnimation, '/src/assets/json/Risk.json');
+      loadAnimation(multiAssetsAnimation, '/src/assets/json/multi.json');
+      loadAnimation(backtestingAnimation, '/src/assets/json/Setting.json');
       
       // Initialize GSAP animations
       

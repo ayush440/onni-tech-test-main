@@ -10,7 +10,7 @@
       class="flex flex-wrap items-center justify-center sm:gap-3 border border-[#4984C4] rounded-full w-max mx-auto p-1">
 
       <button v-for="item in tabs" :key="item" :class="[
-        'py-2 px-4 sm:px-6 rounded-full font-medium transition-colors text-sm md:text-base',
+        'py-2 px-4 sm:px-6 rounded-full font-medium text-sm md:text-base',
         item === activeTab ? 'bg-[#4984C4] text-white' : 'text-[#A0ABBB]'
       ]" @click="activeTab = item">
         {{ item }}
@@ -31,12 +31,7 @@
 
     <div ref="plansContainer" class="flex flex-col text-white lg:flex-row justify-center gap-6 max-w-7xl mx-auto">
       <div v-for="(plan, index) in plans" :key="index" ref="planCards" 
-        :class="['plan-card flex-1 p-6 rounded-xl max-w-md mx-auto w-full transition-all duration-500',
-          (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index 
-            ? 'bg-[#4984c4] text-white shadow-glow' 
-            : 'border border-white border-opacity-10']"
-        @mouseenter="hoveredPlan = index"
-        @mouseleave="hoveredPlan = null"
+        class="plan-card flex-1 p-6 rounded-xl max-w-md mx-auto w-full bg-[#4984c4] text-white  hover-card"
         @click="selectedPlan = index">
         <div class="flex justify-between items-start mb-4">
           <div>
@@ -46,15 +41,9 @@
             </p>
           </div>
           <span v-if="plan.discount"
-  :class="[
-    'text-center py-1 w-full md:w-28 rounded-full text-xs transition-all duration-300',
-    (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index
-      ? 'bg-white text-[#4984c4]'
-      : 'bg-[#21A5F01A] text-[#4984c4]'
-  ]">
-  {{ plan.discount }}
-</span>
-
+            class="text-center py-1 w-full md:w-28 rounded-full text-xs bg-white text-[#4984c4]">
+            {{ plan.discount }}
+          </span>
         </div>
         <div class="text-5xl font-bold my-8 flex items-baseline">
           ₹{{ activeTab === 'Monthly' ? plan.monthPrice : activeTab === 'Quarterly' ? plan.quaterlyPrice : activeTab ===
@@ -62,20 +51,15 @@
           <span class="text-sm ml-1 font-normal text-[#E8E0E0]">/
             Month</span>
         </div>
-        <button :class="['w-full py-3 rounded-lg font-medium border transition-colors duration-300',
-          (selectedPlan === index && hoveredPlan === null) || hoveredPlan === index
-            ? 'bg-white text-[#21A5F0] border-white hover:bg-gray-100'
-            : 'border-[#21A5F0] text-[#21A5F0] hover:bg-[#21A5F022] hover:text-white']">
+        <button class="w-full py-3 rounded-lg font-medium border bg-white text-[#21A5F0] border-white">
           Get Started Now
         </button>
         <div class="mt-6 space-y-3">
           <div v-for="(feature, fIndex) in plan.features" :key="fIndex" class="flex items-center">
-            <img v-if="feature.included && ((selectedPlan === index && hoveredPlan === null) || hoveredPlan === index)" 
+            <img v-if="feature.included" 
               src="../assets/svg/check1.svg" alt="" class="mr-2 flex-shrink-0">
-            <img v-else-if="feature.included" 
-              src="../assets/svg/check6.svg" alt="" class="mr-2 flex-shrink-0">
             <img v-else src="../assets/svg/check2.svg" alt="" class="mr-2 flex-shrink-0">
-            <span :class="!feature.included && ((selectedPlan === index && hoveredPlan === null) || hoveredPlan === index) ? 'text-gray-200' : ''">
+            <span>
               {{ feature.text }}
             </span>
           </div>
@@ -96,7 +80,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const activeTab = ref('Monthly');
-const hoveredPlan = ref(null);
 const selectedPlan = ref(1); // Default to Standard Plan (index 1)
 
 const tabs = ['Monthly', 'Quarterly', 'Half Yearly'];
@@ -294,23 +277,36 @@ onMounted(() => {
 
 .plan-card {
   position: relative;
-  transition: all 0.5s ease;
   outline: none;
   border: 1px solid transparent;
+  
 }
 
-.plan-card:hover {
-  box-shadow: 0 0 15px 2px rgba(73, 132, 196, 0.3);
+.plan-card:active {
+  transform: scale(1.02);
 }
 
-.shadow-glow {
-  box-shadow: 0 0 15px 2px rgba(73, 132, 196, 0.3);
-  border-color: transparent !important;
+.hover-card {
+  will-change: transform;
 }
 
-/* Remove the pseudo-elements that were causing the white border issue */
-.plan-card::before,
-.plan-card::after {
-  display: none;
+.hover-card:hover {
+  transform: translateY(-10px) scale(1.03);
+
+  z-index: 10;
+  animation: popUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
+
+@keyframes popUp {
+  0% {
+    transform: translateY(0) scale(1);
+   border: white;
+  }
+  100% {
+    transform: translateY(-10px) scale(1.03);
+   border: white;
+  }
+}
+
+
 </style>

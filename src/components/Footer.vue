@@ -27,33 +27,33 @@
         </div>
 
         <!-- Quick Links Section -->
-        <div ref="quickLinksDesktop" class="text-left  hidden lg:block">
+        <div ref="quickLinksDesktop" class="text-left hidden lg:block">
           <h3 class="font-semibold text-white mb-6 text-xl">Quick links</h3>
           <ul class="space-y-4">
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md ">
+              <router-link :to="{ name: 'home', hash: '#why' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Why Algo
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#pricing' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Pricing
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#features' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Features
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md ">
-                How its works
-              </a>
+              <router-link :to="{ name: 'home', hash: '#how' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+                How it works
+              </router-link>
             </li>
             <li>
-              <a href="#" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#videos' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Videos
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -122,27 +122,32 @@
 
         <!-- Quick Links Mobile (preserved) -->
         <div ref="quickLinksMobile" class="text-center lg:text-left lg:hidden">
-          <h3 class="font-semibold text-white mb-4 text-left ">Quick Links</h3>
-          <ul class="space-y-3 text-left ">
+          <h3 class="font-semibold text-white mb-4 text-left">Quick Links</h3>
+          <ul class="space-y-3 text-left">
             <li>
-              <a href="#how" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#how' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 How it works
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#why" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#why' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Why algo
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#features" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#features' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Features
-              </a>
+              </router-link>
             </li>
             <li>
-              <a href="#pricing" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+              <router-link :to="{ name: 'home', hash: '#pricing' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
                 Pricing
-              </a>
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'home', hash: '#videos' }" class="text-[#E8E0E0] hover:text-[#4984C4] transition-colors text-md">
+                Videos
+              </router-link>
             </li>
           </ul>
         </div>
@@ -195,10 +200,8 @@
         <div class="flex items-center mb-4 lg:mb-0">
           <span class="text-[#E8E0E0] text-sm mr-2">Backed By</span>
           <a href="https://www.xtentioncrew.tech/" target="_blank">
-    <img src="../assets/img/xtention-lg.png" alt="Xtention" class="w-28" />
-</a>
-
-
+            <img src="../assets/img/xtention-lg.png" alt="Xtention" class="w-28" />
+          </a>
         </div>
         <div class="text-[#E8E0E0] text-sm">
           All Rights Reserved
@@ -272,21 +275,6 @@ onMounted(() => {
   );
   
   // Bottom section animation
-  gsap.fromTo(
-    footerBottom.value,
-    { y: 20, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      delay: 0.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: footerBottom.value,
-        start: "top 90%",
-        once: true
-      }
-    }
-  );
+
 });
 </script>
